@@ -1,4 +1,5 @@
-FROM openjdk:8-jdk
+FROM paulosalgado/oracle-java8-ubuntu-16
+LABEL MAINTAINER Paulo Salgado <pjosalgado@gmail.com>
 
 # Create a user and group used to launch processes
 # The user ID 1000 is the default for the first "regular" user on Fedora/RHEL,
@@ -33,7 +34,7 @@ ENV LAUNCH_JBOSS_IN_BACKGROUND true
 USER jboss
 
 # Expose the ports we're interested in
-EXPOSE 8080
+EXPOSE 8080 8443
 
 # Set the default command to run on boot
 # This will boot WildFly in the standalone mode and bind to all interface
