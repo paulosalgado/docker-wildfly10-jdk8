@@ -1,4 +1,5 @@
 FROM openjdk:8-jdk
+LABEL MAINTAINER Paulo Salgado <pjosalgado@gmail.com>
 
 # Create a user and group used to launch processes
 # The user ID 1000 is the default for the first "regular" user on Fedora/RHEL,
