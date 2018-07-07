@@ -1,6 +1,8 @@
 FROM paulosalgado/oracle-java8-ubuntu-16
 LABEL MAINTAINER Paulo Salgado <pjosalgado@gmail.com>
 
+# Based on jboss/wildfly:10.1.0.Final
+
 # Create a user and group used to launch processes
 # The user ID 1000 is the default for the first "regular" user on Fedora/RHEL,
 # so there is a high chance that this ID will be equal to the current user
