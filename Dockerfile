@@ -1,4 +1,4 @@
-FROM paulosalgado/oracle-java8-ubuntu-16:fontconfig
+FROM paulosalgado/oracle-java8-ubuntu-16:fontconfig-lang-fix
 LABEL MAINTAINER Paulo Salgado <pjosalgado@gmail.com>
 
 # Based on jboss/wildfly:10.1.0.Final
